@@ -1,0 +1,76 @@
+$primary: #28b62c
+$enable-rounded: false
+$headings-font-family: 'Oswald', sans-serif
+$headings-margin-bottom: 1.3rem
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+body
+  position: relative
+  font-family: 'Open Sans', sans-serif
+  background: #fff
+
+h1, h2, h3, h4, h5, h6
+  text-transform: uppercase
+
+.navbar-dark .navbar-nav .nav-link
+  font-family: 'Oswald', sans-serif
+  color: $white
+  text-transform: uppercase
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus
+  background: $primary
+  color: $white
+
+
+// Social
+
+.social
+  font-family: 'Oswald', sans-serif
+  font-size: 1.3rem
+
+  & .social__item
+    color: $gray-600
+    text-transform: uppercase
+
+    &:hover
+      color: $dark
+      text-decoration: none
+
+.ring-up
+  font-family: 'Oswald', sans-serif
+  font-size: 1.3rem
+
+.online-register
+  font-family: 'Oswald', sans-serif
+  font-size: 1.3rem
+  text-transform: uppercase
+
+// Page Title
+
+.page-title
+  font-weight: bold
+
+// Sidenav
+
+.sidenav
+
+  & .sidenav__item
+    font-family: 'Oswald', sans-serif
+    text-transform: uppercase
+    color: $gray-800
+    border-left: 4px solid $border-color
+
+    &.active
+      background: none
+      border-left: 4px solid $primary
+      color: $primary
+
+// Squared Images
+
+.img-squared
+  width: 100%
+  height: 255px
+  object-fit: cover

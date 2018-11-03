@@ -1,0 +1,55 @@
+-
+    navItems = [
+        {
+        title: 'О салоне',
+        link: 'about'
+        }, {
+        title: 'Отзывы',
+        link: 'reviews'
+        }, {
+        title: 'Интерьер',
+        link: 'interior'
+        }, {
+        title: 'Работы',
+        link: 'works'
+        }, {
+        title: 'Бренды',
+        link: 'brands'
+        }, {
+        title: 'Услуги',
+        link: 'services'
+        }, {
+        title: 'Контакты',
+        link: 'contacts'
+        }, {
+        title: 'Команда',
+        link: 'team'
+        }, {
+        title: 'Акции',
+        link: 'offers'
+        }
+    ]
+
+header.mb-5
+    nav.navbar.navbar-light.p-0
+        .navbar-nav.w-100.flex-row.justify-content-between.align-items-center.py-3
+            a.navbar-brand(href='index.html')
+                img.d-none.d-lg-inline-block(src='img/logo.jpg', height='80', alt='Bigudi Club')
+                img.d-lg-none(src='img/logo-short.jpg', height='80', alt='Bigudi Club')
+            .social.d-none.d-lg-block
+                a.social__item(href='https://www.instagram.com/bigudi_club/' target="_blank")
+                    i.fab.fa-instagram.fa-lg.mr-1
+                    span Instagram
+            div.online-register.d-none.d-lg-block
+                a.btn.btn-primary(href='#') Онлайн запись
+            div
+                div.ring-up
+                    i.fas.fa-phone.fa-lg.mr-1
+                    span &nbsp;+7 (499) 707-31-19
+                span.text-dark.small Мы работаем с 10:00 до 21:00
+            a.d-lg-none.navbar-toggler(data-toggle='collapse' data-target='#pagenav')
+                span.navbar-toggler-icon
+        nav.w-100.navbar-expand-lg.navbar-dark.bg-dark.p-0
+            #pagenav.navbar-nav.collapse.navbar-collapse.w-100.justify-content-around
+                each val in navItems
+                    a.nav-link.p-3(href=val.link + ".html")= val.title

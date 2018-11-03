@@ -1,0 +1,24 @@
+{
+  "name": "Bigudi-Club-Frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alertnet/Bigudi-Club-Frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alertnet/Bigudi-Club-Frontend/issues"
+  },
+  "homepage": "https://github.com/Alertnet/Bigudi-Club-Frontend#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}

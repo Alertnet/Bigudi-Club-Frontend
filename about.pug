@@ -1,0 +1,72 @@
+extends _index
+
+block page
+
+    body(data-spy="scroll" data-target="#navbar-about")
+
+        .container
+
+            include components/_header
+
+            .row
+                .col-lg-3
+                    div.d-none.d-lg-block.position-fixed
+                        h1.page-title О нас
+                        aside
+                            nav#navbar-about.sidenav.nav.flex-column
+                                a.nav-link.sidenav__item(href='#description') Добро пожаловать
+                                a.nav-link.sidenav__item(href='#works') Работы мастеров
+                                a.nav-link.sidenav__item(href='#interior') Наши салоны
+                                a.nav-link.sidenav__item(href='#contacts') Контакты
+                .col-lg-9
+                    section#description.mb-4
+                        h2 Добро пожаловать в Бигуди Клаб!
+                        p Bigudi Club — сеть салонов красоты отличающаяся доступными ценами, высоким качеством обслуживания и широким спектром предоставляемых услуг. Мы предоставляем не только услуги мужской и женской стрижки но и окраску, укладку волос, маникюр, и сахарную и восковую эпиляцию.
+                        p Персонал салонов подобран из настоящих профессионалов своего дела имеющих многолетний опыт в своей сфере. Мы всегда будем рады проконсультировать вас и подобрать подходящее по стоимости вариант. Мы работаем только с расходными материалами качественных брендов и можем гарантировать отличный результат даже в самых сложных случаях.
+
+                    section#works.mb-4
+                        h3 Работы наших мастеров
+                        .row
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c852236/v852236477/35f0d/RKilMuPkngE.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c845019/v845019980/11ed03/niUHrBXDFhA.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c849220/v849220911/b09e0/Ufq1NyTpRFE.jpg")
+                            .w-100.mb-4
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c845322/v845322713/10aa22/OMiY6dRxq7U.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c846019/v846019473/fd0f5/MSu-D-t3_qo.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c846219/v846219675/106793/qxRWd_QGIOA.jpg")
+                            .w-100.mb-4
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c844724/v844724438/10cfd2/YuAAPYWTEzw.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c847120/v847120438/103018/SiphH67Fb28.jpg")
+                            .col-lg-4
+                                img.img-squared(src="https://pp.userapi.com/c846419/v846419949/103ab5/j6_hKjhQSzY.jpg")
+
+                    section#interior.mb-4
+                        h3 Наши салоны
+                        .row
+                            .col-lg-8
+                                img.img-fluid.mb-3(src='https://p2.zoon.ru/preview/9hSbAT-rtiZj7BsKoPt_Vg/2400x1500x75/1/9/9/original_4f145fc9f89c60510c000824_598ad6cee1a45.jpg' alt='Салон')
+                            .col-lg-4
+                                h5 Салон
+                                p
+                                    i.fas.fa-map-marker-alt
+                                    | &nbsp; Шоссейная улица, 29к1
+                                p
+                                    i.fas.fa-phone
+                                    | &nbsp; +7 (499) 707-31-19
+                                p
+                                    i.far.fa-clock
+                                    | &nbsp; 10:00 - 21:00
+                                a.btn.btn-primary(href='#') Записаться
+                    section#contacts.mb-4
+                        h3 Приходите к нам
+                        p Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.
+
+        include components/_footer
