@@ -1,14 +1,43 @@
-footer.bg-dark.py-5
+-
+    navItems = [
+        {
+            title: 'О салоне',
+            link: 'about'
+        },
+        {
+            title: 'Интерьер',
+            link: 'interior'
+        },
+        {
+            title: 'Работы мастеров',
+            link: 'works'
+        },
+        {
+            title: 'Команда',
+            link: 'team'
+        },
+        {
+            title: 'Отзывы',
+            link: 'reviews'
+        },
+        {
+            title: 'Контакты',
+            link: 'contacts'
+        }
+    ]
+
+footer.bg-dark.text-light.py-5.footer
     .container
         .row
-            .col-lg-4
-                p Сайт разработан командой Alertnet.
-            .col-lg-4
-                .social
-                    a.social__item(href='https://www.instagram.com/bigudi_club/' target="_blank")
-                        i.fab.fa-instagram.fa-lg.mr-1
-                        span Instagram
-            .col-lg-4
-                div.ring-up
-                    i.fas.fa-phone.fa-lg.mr-1
-                    span &nbsp;+7 (499) 707-31-19
+            .col-lg-6
+                span.small.text-light &copy; 2018 Bigudi Club. Все права защищены.
+                    br
+                    | Сайт разработан&nbsp;
+                    a(href="http://alertnet.online" target="_blank") Alertnet.
+            .col-lg-6.text-right
+                div.online-register.d-none.d-lg-block.mb-3
+                    a.btn.btn-primary(href='#') Онлайн запись
+                div
+                    i.fas.fa-phone.fa-lg.mr-2
+                    span +7 (499) 707-31-19
+                span.mb-3.text-light.small Мы работаем с 10:00 до 21:00
